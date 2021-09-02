@@ -56,6 +56,7 @@ const Main = () => {
             src={value.path}
             alt={value.alt}
             onClick={() => showImgModal(value.path, value.alt)}
+            className={classes.point}
           />
         ))}
       </div>
@@ -74,5 +75,8 @@ const useStyles = makeStyles({
     overflow: "scroll",
     boxShadow: "none",
   },
+  point:{
+      cursor:"pointer"
+  }
 });
 export default Main;
